@@ -1,0 +1,26 @@
+Starting DataMigrationApplication on SKY-20160329PDG with PID 60032 (F:\myluban1.4\Data-Migration\target\classes started by Administrator in F:\myluban1.4\Data-Migration)
+The following profiles are active: dev
+Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7ef9db3c: startup date [Thu Oct 25 11:22:28 CST 2018]; root of context hierarchy
+Flyway 4.2.0 by Boxfuse
+Database: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&autoReconnect=true&useAffectedRows=true (MySQL 5.7)
+Successfully validated 4 migrations (execution time 00:00.033s)
+Current version of schema `test`: 1.1.2
+outOfOrder mode is active. Migration of schema `test` may not be reproducible.
+Schema `test` is up to date. No migration necessary.
+Registering beans for JMX exposure on startup
+Started DataMigrationApplication in 1.577 seconds (JVM running for 3.983)
+Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@7ef9db3c: startup date [Thu Oct 25 11:22:28 CST 2018]; root of context hierarchy
+Unregistering JMX-exposed beans on shutdown
+Starting DataMigrationApplication on SKY-20160329PDG with PID 54888 (F:\myluban1.4\data-migration\target\classes started by Administrator in F:\myluban1.4\data-migration)
+The following profiles are active: dev
+Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@138a6240: startup date [Thu Oct 25 13:07:20 CST 2018]; root of context hierarchy
+Flyway 4.2.0 by Boxfuse
+Database: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&autoReconnect=true&useAffectedRows=true (MySQL 5.7)
+Successfully validated 4 migrations (execution time 00:00.030s)
+Current version of schema `test`: 1.1.2
+outOfOrder mode is active. Migration of schema `test` may not be reproducible.
+Schema `test` is up to date. No migration necessary.
+Registering beans for JMX exposure on startup
+Started DataMigrationApplication in 1.626 seconds (JVM running for 4.664)
+Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@138a6240: startup date [Thu Oct 25 13:07:20 CST 2018]; root of context hierarchy
+Unregistering JMX-exposed beans on shutdown
