@@ -1,19 +1,14 @@
 package db.migration;
 
 import com.robert.migration.datamigration.common.BaseDataSourceCopyMigration;
-import com.robert.migration.datamigration.common.SpringUtil;
-import com.robert.migration.datamigration.dao.TestAEntityDao;
-import com.robert.migration.datamigration.dao.TestBEntityDao;
-import com.robert.migration.datamigration.dao.TestCEntityDao;
-import com.robert.migration.datamigration.dao.TestEntityDao;
+import com.robert.migration.datamigration.dao.mysql.TestAEntityDao;
+import com.robert.migration.datamigration.dao.mysql.TestBEntityDao;
+import com.robert.migration.datamigration.dao.mysql.TestCEntityDao;
+import com.robert.migration.datamigration.dao.mysql.TestEntityDao;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.jdbc.core.BeanPropertyRowMapper;
-import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
+import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.transaction.annotation.Transactional;
-
-import java.util.List;
 
 /**
  * 1.1.1版本java程序进行数据迁移或升级
@@ -29,7 +24,7 @@ public class V1_1_1__Migration extends BaseDataSourceCopyMigration {
 
     @Transactional
     @Override
-    protected void doMigrate(TestEntityDao testEntityDao, TestAEntityDao testAEntityDao, TestBEntityDao testBEntityDao, TestCEntityDao testCEntityDao) throws Exception {
+    protected void doMigrate(TestEntityDao testEntityDao, TestAEntityDao testAEntityDao, TestBEntityDao testBEntityDao, TestCEntityDao testCEntityDao, MongoTemplate primaryMongoTemplate, MongoTemplate secondaryMongoTemplate) throws Exception {
         logger.info("---------------------------------开始升级数据---------------------------------");
         /**
          * 1.1.1版本 具体的数据升级逻辑

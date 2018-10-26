@@ -1,6 +1,5 @@
-package com.robert.migration.datamigration.dao.impl;
+package com.robert.migration.datamigration.dao.mysql.impl;
 
-import com.robert.migration.datamigration.dao.TestBEntityDao;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
 
@@ -12,7 +11,7 @@ import javax.annotation.Resource;
  * @描述:数据源B对数据的操作
  */
 @Component("TestBEntityDao")
-public class TestBEntityDaoImpl implements TestBEntityDao {
+public class TestBEntityDaoImpl {
     @Resource(name="TestBJdbcTemplate")
     private JdbcTemplate jdbcTemplate;
 

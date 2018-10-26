@@ -13,7 +13,7 @@ import javax.sql.DataSource;
 /**
  * @创建人: zhangyapo
  * @创建时间: 2018/10/17 14:43
- * @描述: 多个数据源配置,复杂的数据升级或迁移一般都需要多个数据源,并且通过多个数据源进行数据逻辑处理后迁移或升级到具体的库中
+ * @描述: 多个mysql数据源配置,复杂的数据升级或迁移一般都需要多个数据源,并且通过多个数据源进行数据逻辑处理后迁移或升级到具体的库中
  */
 @Configuration
 public class DataSourceConfig {

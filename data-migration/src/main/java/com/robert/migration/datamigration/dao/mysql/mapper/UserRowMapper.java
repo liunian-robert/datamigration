@@ -1,4 +1,4 @@
-package com.robert.migration.datamigration.dao.mapper;
+package com.robert.migration.datamigration.dao.mysql.mapper;
 
 import com.robert.migration.datamigration.domain.User;
 import org.springframework.jdbc.core.RowMapper;
