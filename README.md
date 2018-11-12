@@ -12,5 +12,5 @@ Flyway的运行机制很简单，其中Migrate是Flyway工作流的核心功能�
       
       2.打成jar包运行：java -jar data-migration-1.0.0-SNAPSHOT.jar --spring.config.location=file:./config/（./config/为实际的配置文件目录）
       
-有关Flyway的详细使用请参考博客：
+有关Flyway的详细使用请参考博客：http://srobert.pythonanywhere.com/article/32
       
